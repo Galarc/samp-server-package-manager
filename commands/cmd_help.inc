@@ -108,7 +108,7 @@ stock Help_List(playerid, helpid = 0, const title_help[]="default") {
             
         }
         case OPC_03_PRIMEIROS_PASSOS: {
-            SetPlayerCheckpoint(playerid, 1125.1439, -2036.8538, 69.8822, 8.0);
+            SetPlayerCheckpoint(playerid, 1381.1443,-1758.0443,13.5469, 8.0);
             return 1;
         }
 	    case OPC_04_PRIMEIROS_PASSOS: {
