@@ -52,6 +52,7 @@ stock Help_List(playerid, helpid = 0, const title_help[]="default") {
 
         // /ajuda (Começa pelo ID 0, ou seja, "Atualizações" é o ID 0...)
         case 0: {
+	    
             strcat(MEGAString, " {00FF00}» {00FF00}Iniciantes {00FA9A}» Primeiros passos\n");
             strcat(MEGAString, " {00FF00}» {00FF00}Segurança {00FA9A}» Como fazer uma venda/troca segura\n");
             strcat(MEGAString, " {00FF00}» {00FF00}Importante {FFFFFF}» Regras do Servidor\n");
@@ -1170,36 +1171,36 @@ hook OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
         switch (listitem)
 		{
             case 0: Help_List(playerid, HELP_PRIMEIROS_PASSOS);
-			case 1: Help_List(playerid, HELP_NEGOCIAR);
+			case 1: Help_List(playerid, HELP_NEGOCIAR, "Vendas e Trocas");
             case 2: Help_List(playerid, HELP_REGRAS);
             case 3: Help_List(playerid, HELP_ATUALIZACAO);
             case 4: Help_List(playerid, HELP_FORUM);
             case 5: Help_List(playerid, HELP_DISCORD);
-            case 6: Help_List(playerid, HELP_COMPRAR_CASH, "Ajuda comprar cash");
+            case 6: Help_List(playerid, HELP_COMPRAR_CASH);
 			case 7: cmd_rg(playerid);
 			case 8: Help_List(playerid, HELP_GERAL);
-			case 9: Help_List(playerid, HELP_ATENDIMENTO);
-            case 10: Help_List(playerid, HELP_VIRAR_LIDER);
-            case 11: Help_List(playerid, HELP_GIFT_CARD);
-            case 12: Help_List(playerid, HELP_ENTRAR_ORG);
-            case 13: Help_List(playerid, HELP_FOME_SEDE);
-            case 14: Help_List(playerid, HELP_VIRAR_VIP);
+			case 9: Help_List(playerid, HELP_ATENDIMENTO, "Ajuda da Staff");
+            case 10: Help_List(playerid, HELP_VIRAR_LIDER, "Ser Líder");
+            case 11: Help_List(playerid, HELP_GIFT_CARD, "Gift Card");
+            case 12: Help_List(playerid, HELP_ENTRAR_ORG, "Organizacoes");
+            case 13: Help_List(playerid, HELP_FOME_SEDE, "Fome e Sede");
+            case 14: Help_List(playerid, HELP_VIRAR_VIP, "VIP");
             case 15: Help_List(playerid, HELP_VIP);
-            case 16: Help_List(playerid, HELP_CONSEGUIR_ARMA);
-            case 17: Help_List(playerid, HELP_TROCAR_NICK);
+            case 16: Help_List(playerid, HELP_CONSEGUIR_ARMA, "Armas");
+            case 17: Help_List(playerid, HELP_TROCAR_NICK, "Troca de Nick");
 			case 18: Help_List(playerid, HELP_ORG, "Ajuda organização");
 			case 19: Help_List(playerid, HELP_EMPREGO, "Ajuda emprego");
 			case 20: Help_List(playerid, HELP_CELULAR, "Ajuda celular");
 			case 21: Help_List(playerid, HELP_HOUSE, "{797978}Ajuda casa");
 			case 22: Help_List(playerid, HELP_PROPRIEDADES);
-			case 23: Help_List(playerid, HELP_VEHICLE);
+			case 23: Help_List(playerid, HELP_VEHICLE, "Veiculos");
 			case 24: Help_List(playerid, HELP_COZINHA, "Ajuda cozinha");
-			case 25: Help_List(playerid, HELP_ALUGUEL);
+			case 25: Help_List(playerid, HELP_ALUGUEL, "Aluguel");
 			case 26: Help_List(playerid, HELP_LIDER, "Ajuda líder");
 			case 27: cmd_gps(playerid);
 			case 28: Help_List(playerid, HELP_RADIO);
 			case 29: Help_List(playerid, HELP_FAZENDA, "Ajuda Fazenda");
-			case 30: Help_List(playerid, HELP_CAIXA);
+			case 30: Help_List(playerid, HELP_CAIXA, "Caixas Surpresa");
 			case 31: Help_List(playerid, HELP_DROGAS);
 		}
 	    return 1;
